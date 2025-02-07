@@ -5,7 +5,7 @@ const cors = require("cors");
 require('dotenv').config();
 const stripe = require("stripe")(process.env.stripeSecretKey);
 
-app.use(express.static("./public"));
+app.use(express.static("../frontend/build"));
 app.use(bodyParser.json());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
