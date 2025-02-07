@@ -2,3 +2,6 @@
 /backend/node_modules
 
 /frontend/build
+/backend/.env
+/frontend/.env
+/frontend/package-look.json
