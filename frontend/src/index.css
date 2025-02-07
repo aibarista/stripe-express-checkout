@@ -1,0 +1,54 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* Ensure all inputs have box-sizing as border-box */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Ensure all form inputs have the same width, padding, and border */
+input,
+.react-datepicker__input-container input,
+.react-phone-number-input input {
+  width: 100% !important;
+  padding: 12px; /* Adjust padding to make it uniform */
+  border: 1px solid #d1d5db; /* Same border style as the regular inputs */
+  border-radius: 8px; /* Ensure rounded corners like other inputs */
+  font-size: 16px; /* Same font size */
+}
+.react-datepicker-wrapper {
+  width: 100%;
+}
+input,
+.react-datepicker__input-container input,
+.react-phone-number-input input:focus {
+  outline: none; /* Remove the default focus outline */
+}
+
+/* Ensure DatePicker and PhoneInput look consistent */
+.react-datepicker__input-container,
+.react-phone-number-input {
+  width: 100% !important; /* Ensures consistent width */
+}
+
+.react-phone-number-input {
+  padding: 12px; /* Match the padding of other inputs */
+}
